@@ -94,28 +94,34 @@
         <hr class="divider my-4">
         <div class="row justify-content-center">
             <div class="col-3 blok">
-                <i class="fas fa-tools fa-3x"></i>
+                <i class="fas fa-tools fa-3x" ></i>
                 <br>
-                <p>Photoshop</p>
-                <br>
-                <p>Illustrator</p>
-                <br>
-                Blender
-                <br>
-                Premiere pro
-                <br>
-                Wordpress
+                <p style="padding-top: 20px;">Photoshop
+                    <br>
+                    Illustrator
+                    <br>
+                    Blender
+                    <br>
+                    Premiere pro
+                    <br>
+                    Wordpress
+                </p>
+
             </div>
             <div class="col-3 blok">
                 <i class="fas fa-file-signature fa-3x"></i>
                 <br>
-                Html / Css
-                <br>
-                Php
-                <br>
-                Javascript
-                <br>
-                Jquery
+                <p  style="padding-top: 20px;">
+                    Html
+                    <br>
+                    Css
+                    <br>
+                    Php
+                    <br>
+                    Javascript
+                    <br>
+                    Jquery
+                </p>
             </div>
         </div>
     </div>
@@ -251,7 +257,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Cyberpunk</h2>
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">Cyberpunk</h2>
                             <!-- Icon Divider -->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
@@ -263,7 +269,29 @@
                             <!-- Portfolio Modal - Image -->
                             <img class="img-fluid rounded mb-5" src="img/portfolio/fullsize/2.png" alt="">
                             <!-- Portfolio Modal - Text -->
-                            <p class="mb-5 maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <p class="mb-5 maintext">An alleway inspired by Cyberpunk made in Blender <br> <br>
+                            And here are different snippets
+                            </p>
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/cycle/1.png" alt="rotating image"  id="rotator">
+                            <script type="text/javascript">
+                                (function() {
+                                    var rotator = document.getElementById('rotator');
+                                    var imageDir = 'img/portfolio/cycle/';
+                                    var delayInSeconds = 10;
+
+                                    var images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png'];
+
+                                    var num = 0;
+                                    var changeImage = function() {
+                                        var len = images.length;
+                                        rotator.src = imageDir + images[num++];
+                                        if (num == len) {
+                                            num = 0;
+                                        }
+                                    };
+                                    setInterval(changeImage, delayInSeconds * 100);
+                                })();
+                            </script>
                             <button class="btn btn-primary" href="#" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
@@ -290,7 +318,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">House</h2>
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">House</h2>
                             <!-- Icon Divider -->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
@@ -302,7 +330,7 @@
                             <!-- Portfolio Modal - Image -->
                             <img class="img-fluid rounded mb-5" src="img/portfolio/fullsize/1.png" alt="">
                             <!-- Portfolio Modal - Text -->
-                            <p class="mb-5 maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <p class="mb-5 maintext">A low poly medieval house made in Blender</p>
                             <button class="btn btn-primary" href="#" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
@@ -329,7 +357,171 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title -->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Donut</h2>
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">Donut</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-5 maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut2.png" alt="">
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">Donut</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-5 maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut2.png" alt="">
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">Donut</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-5 maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut2.png" alt="">
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">Donut</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-5 maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/donut2.png" alt="">
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModal7 q" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-uppercase mb-0">Donut</h2>
                             <!-- Icon Divider -->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
