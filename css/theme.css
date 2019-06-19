@@ -49,7 +49,6 @@
         -webkit-box-shadow: none;
         box-shadow: none;
         background-color: transparent !important;
-        color: #fff;
     }
 }
 
@@ -57,19 +56,19 @@
     #mainNav.navbar-scrolled {
         -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
-        background-color: #fff !important;
+        background: linear-gradient(to bottom, rgba(9,24,31,1) 0%, rgba(7,30,30,1) 34%, rgba(11,27,34,1) 100%) !important;
     }
 }
 
 @media (min-width: 992px) {
     #mainNav.navbar-scrolled .navbar-brand {
-        color: #212529 !important;
+        color: #fff !important;
     }
 }
 
 @media (min-width: 992px) {
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-        color: #212529 !important;
+        color: #fff !important;
     }
 }
 
