@@ -120,11 +120,11 @@
                 <i class="fas fa-file-signature fa-3x"></i>
                 <br>
                 <p  style="padding-top: 20px;">
-                    Html
+                    HTML
                     <br>
-                    Css
+                    CSS
                     <br>
-                    Php
+                    PHP
                     <br>
                     Javascript
                     <br>
@@ -731,9 +731,30 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image -->
-                            <img class="img-fluid rounded mb-5" src="img/portfolio/fullsize/1.png" alt="">
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/fullsize/Tower6.png" alt="">
                             <!-- Portfolio Modal - Text -->
-                            <p class="mb-5 maintext">A low poly medievaESTSouse made in Blender</p>
+                            <p class="mb-5 maintext">A Tower scene made in Blender</p>
+                            <p class="mb-5 maintext">Some different snippets</p>
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/cycle2/Tower1.png" alt="rotating image"  id="rotator2">
+                            <script type="text/javascript">
+                                (function() {
+                                    var rotator2 = document.getElementById('rotator2');
+                                    var imageDir = 'img/portfolio/cycle2/';
+                                    var delayInSeconds = 10;
+
+                                    var images = ['Tower1.png', 'Tower2.png', 'Tower3.png', 'Tower4.png', 'Tower6.png'];
+
+                                    var num = 0;
+                                    var changeImage = function() {
+                                        var len = images.length;
+                                        rotator2.src = imageDir + images[num++];
+                                        if (num == len) {
+                                            num = 0;
+                                        }
+                                    };
+                                    setInterval(changeImage, delayInSeconds * 100);
+                                })();
+                            </script>
                             <button class="btn btn-primary" href="#" data-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
